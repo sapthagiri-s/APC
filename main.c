@@ -9,17 +9,17 @@ int main(int argc, char *argv[])
 
 	if ((check_digit(argv[1])) == FAILURE) // Check if the first input is a valid number
 	{
-		printf("Please pass the proper input\n");
+		printf("For help: \n./apc.exe num1 (+, -, x, /) num2\n");
 		return 0;
 	}
 	if ((check_oper(argv[2][0])) == FAILURE) // Check if the operator is valid
 	{
-		printf("Please pass the proper operator\n");
+		printf("For help: \n./apc.exe num1 (+, -, x, /) num2\n");
 		return 0;
 	}
 	if ((check_digit(argv[3])) == FAILURE) // Check if the second input is a valid number
 	{
-		printf("Please pass the proper input\n");
+		printf("For help: \n./apc.exe num1 (+, -, x, /) num2\n");
 		return 0;
 	}
 	Store_data(&data1, argv[1], &flag1); // Store the first number in data1 and set its sign flag
